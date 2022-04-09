@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="hw1.css">
+    <title>HW1</title>
+</head>
+<body>
+   <div id="wrap">
+       <!--header tag -->
+        <header id="header" class="clearfix">
+            <div class="logo">Wonho's Page</div>
+            <!--button tag -->
+            <button type="button" class="btn btn-secondary">SEND MESSAGE</button>
+        </header>
+        
+        <!--
+        <h2 id="clock">00:00:00</h2>
+       -->
+       
+        <section id="section1">
+            <caption><h2 class="title1">자기 소개</h2></caption>
+            <table class="content1">
+                <tr>
+                    <td>1999.10</td>
+                    <td>탄생</td>
+                </tr>
+                <tr>
+                    <td>2012.02</td>
+                    <td>홍익대학교부속초등학교 졸업</td>
+                </tr>
+                <tr>
+                    <td>2015.02</td>
+                    <td>숭문중학교 졸업</td>
+                </tr>
+                <tr>
+                    <td>2018.02</td>
+                    <td>숭문고등학교 졸업</td>
+                </tr>
+                <tr>
+                    <td>2019.03~</td>
+                    <td>광운대학교 컴퓨터정보 공학부 재학</td>
+                </tr>
+            </table>
+            
+        </section>
+        
+        <section id="section2">
+            <h2 class="title2">Hobby</h2>
+            <p class="content2">
+                Coding<br>
+                Golf<br>
+                Riding bike<br>
+                Collecting shoes<br>
+            </p>
+        </section>
+        
+        <section id="section3">
+            <h2 class="title3">Shoes Picture</h2>
+            <div class="slideList">
+                <div class="slideImg"><img src="img/pic3.jpg" alt="이미지"></div>
+                <!--
+                <div class="slideImg"><img src="img/pic2.jpg" alt="이미지"></div>
+                <div class="slideImg"><img src="img/pic1.jpg" alt="이미지"></div>
+                -->
+            </div>        
+        </section>
+        
+        <footer id="footer">
+          <br><br>
+           <!--form tag-->
+            <form class="transfer">
+                <input type="text" placeholder="이름">
+                <input type="text" placeholder="전달할 말">
+                <input type="submit" placeholder="제출하기">
+            </form>
+        </footer>
+    </div>
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        var currentIndex=0;
+        
+        setInterval(function(){
+            if(currentIndex<2){
+                currentIndex++;
+            }
+            else{
+                currentIndex=0;
+            }
+            
+            var slidePosition= currentIndex * (-360)+"px";
+            $('.slideList').animate({top:slidePosition},400);
+            
+        },3000);
+    </script>
+    -->
+    
+    <!-- 개선해야 할 사항
+    1. 시간 설치
+    2. form을 버튼을 눌렀을 때 display none에서 block으로 z-index값 크게 해서 보이게 하기
+    3. 이미지 여러개를 스크립트 사용해서 넘어가도록 하기
+    -->
+    </body>
+</html>
